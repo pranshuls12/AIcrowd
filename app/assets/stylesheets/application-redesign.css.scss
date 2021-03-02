@@ -11157,35 +11157,28 @@ body {
 }
 @media (max-width : 767.98px){
   .publication-date-mobile{
-  font-weight:600;
  font-size:0.65rem;
   
 }
 .publication-cite-button{
   font-size:0.75rem!important;
-  background-color: #f0524d;
-  color:white!important;
   margin-top:0.5rem;
 }
 .publication-abstract-mobile{
   margin-top: -3.0rem!important;
 }
 .publication-venue-mobile{
-color: #f0524d;
 font-size:0.75rem;
   
 }
 .publication-button-mobile{
   margin-top:0.7rem;
 }
+.avatar-group{
+    flex-flow: wrap;
+    display: inline-flex;
+    justify-content: start;
 }
-.publication-venue-mobile{
-color: #f0524d;
-  
-}
-.publication-cite-button{
-  background-color: #f0524d;
-  color:white!important;
 }
 
 .avatar-group a:first-of-type, .avatar-group span:first-of-type {

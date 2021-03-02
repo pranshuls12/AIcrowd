@@ -19,18 +19,18 @@
           <a class="text-link" href="<%= publication_path(publication)%>"><%= publication.title %></a>
           <span class="contribution-subtitle">
             <div class="p-0 d-flex ml-n1 mt-2">
-              <span class="ml-1 align-middle">
+              <div class="ml-1 align-middle">
                 <%= link_to all_publications_path(venues: publication.venues.first.short_name) do %>
                   <small class="text-link publication-venue-mobile"><%= publication.venues.first.venue %></small>
                 <% end %>
-              </span>
+              </div>
               <span class="text-muted ml-1">•</span>
-              <span class="ml-1 align-middle">
+              <div class="ml-1 align-middle">
                 <small class="publication-date-mobile"><%= publication.publication_date.strftime("%B %Y") %></small>
-              </span>
+              </div>
             </div>
             <div class="avatar-group mt-3 list-group-research">
-              <% publication.authors.limit(2).each do |author| %>
+              <% publication.authors.limit(3).each do |author| %>
                 <% if author.participant_id.present? %>
                   <span class="mr-2">
                     <small>
@@ -39,7 +39,7 @@
                   </span>
                 <% else %>
                   <a href="#" class="mr-2">
-                    <img class="avatar mr-0" src="https://d33wubrfki0l68.cloudfront.net/7d408ce7a8c9ff4ca58268ca1886ff021b5412e7/e1c11/assets/img/user-avatar-default.svg" style="width: 18px;height: 18px;">
+                    <img class="avatar mr-0" src="https://d33wubrfki0l68.cloudfront.net/7d408ce7a8c9ff4ca58268ca1886ff021b5412e7/e1c11/assets/img/user-avatar-default.svg" style="width: 18px;height: 18px; margin-left: 5px;">
                     <span class="text-link"><small><%= author.name %></small></span>
                   </a>
                 <% end %>
