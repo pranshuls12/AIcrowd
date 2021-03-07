@@ -11176,9 +11176,16 @@ font-size:0.75rem;
 }
 .avatar-group{
     flex-flow: wrap;
-    display: inline-flex;
     justify-content: start;
 }
+.publciation-btn-desc .btn{
+      font-size: .762rem !important;
+      padding: 0.25rem 0.875rem;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      border-radius: 1.5rem;
+}
+
 }
 
 .avatar-group a:first-of-type, .avatar-group span:first-of-type {
