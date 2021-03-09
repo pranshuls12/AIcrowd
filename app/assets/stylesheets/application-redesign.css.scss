@@ -5746,6 +5746,7 @@ video {
   .list-group-users .list-group-item-user {
     padding: 1rem 0;
   }
+  
 }
 
 .list-group-users .avatar {
@@ -5783,6 +5784,7 @@ video {
   .list-group-challenge-teams .avatar-group {
     margin: .5rem 0 0 0;
   }
+
 }
 
 .list-group-challenge-teams .submissions {
@@ -14416,6 +14418,7 @@ input.width-185 {
 }
 
 .aicrowd-mermaid {
+  font-family:"inter-ui", sans-serif;
   background: unset;
   font-size: unset;
 }
