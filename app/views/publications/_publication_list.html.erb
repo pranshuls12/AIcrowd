@@ -21,15 +21,15 @@
             <div class="p-0 d-flex ml-n1 mt-2">
               <div class="ml-1 align-middle">
                 <%= link_to all_publications_path(venues: publication.venues.first.short_name) do %>
-                  <small class="text-link publication-venue-mobile"><%= publication.venues.first.venue %></small>
+                  <small ><%= publication.venues.first.venue %></small>
                 <% end %>
               </div>
               <span class="text-muted ml-1">•</span>
               <div class="ml-1 align-middle">
-                <small class="publication-date-mobile"><%= publication.publication_date.strftime("%B %Y") %></small>
+                <small><%= publication.publication_date.strftime("%B %Y") %></small>
               </div>
             </div>
-            <div class="avatar-group mt-3 list-group-research">
+            <div class="avatar-group avatar-group-research mt-3 list-group-research">
               <% publication.authors.limit(3).each do |author| %>
                 <% if author.participant_id.present? %>
                   <span class="mr-2">
@@ -47,7 +47,7 @@
               <% if publication.authors.count > 3 %>
                 <span class="text-link"><small>&amp;</small></span>
                 <div class="avatar-group ml-1">
-                  <% publication.authors.offset(2).each do |author| %>
+                  <% publication.authors.offset(3).each do |author| %>
                     <% if author.participant_id.present?%>
                       <%= render partial: 'participants/get_user_profile_for_research', locals: { participant: author.participant, base_class: "avatar mr-0 border border-white"} %>
                     <% else %>

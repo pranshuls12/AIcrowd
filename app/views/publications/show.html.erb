@@ -21,7 +21,7 @@
         <% end %>
         <h1 style="max-width: unset;text-transform: capitalize;font-size: 2.25rem;"><%= @publication.title %></h1>
 
-        <div class="avatar-group mt-3 mb-n4 list-group-research-big">
+        <div class="avatar-group avatar-group-mobile mt-3 mb-n4 list-group-research-big">
           <% @publication.authors.each do |author| %>
             <% if author.participant_id.present? %>
               <%= render partial: 'participants/get_user_profile_for_research', locals: { participant: author.participant, username: author.name } %>

@@ -11155,7 +11155,7 @@ body {
 }
 
 .avatar-group a, .avatar-group span {
-  margin-left: -4px;
+  margin-left: -2px;
 }
 @media (max-width : 767.98px){
   .publication-date-mobile{
@@ -11176,10 +11176,12 @@ font-size:0.75rem;
 .publication-button-mobile{
   margin-top:0.7rem;
 }
-.avatar-group{
-    flex-flow: wrap;
+   
+.avatar-group-research{
+    flex-flow: wrap !important;
     justify-content: start;
 }
+
 .publciation-btn-desc .btn{
       font-size: .762rem !important;
       padding: 0.25rem 0.875rem;
@@ -11187,12 +11189,22 @@ font-size:0.75rem;
       line-height: 1.5;
       border-radius: 1.5rem;
 }
-
+.avatar-group-mobile{
+  flex-flow: column!important;
+    align-items: baseline!important;
+}
+.avatar-group-mobile a{
+  margin-top: 0.4rem;
+}
+.avatar-group a:first-of-type, .avatar-group span:first-of-type{
+  margin-left:none!important;
 }
 
-.avatar-group a:first-of-type, .avatar-group span:first-of-type {
-  margin-left: 0;
 }
+.avatar-group-mobile{
+  flex-flow: wrap;
+}
+
 
 .avatar-group .avatar {
   width: 32px;
